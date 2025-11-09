@@ -15,7 +15,7 @@ public class BaseTests {
         driver = new ChromeDriver();
     }
     @BeforeMethod
-    public void goHome() {
+    public void goLoginPage() {
         LoginPage = new LoginPage(driver);
         driver.get("https://www.saucedemo.com/");
     }
