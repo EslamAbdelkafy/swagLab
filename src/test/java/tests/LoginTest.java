@@ -10,6 +10,7 @@ import utils.DataDriven;
 
 public class LoginTest extends BaseTests {
     private LoginPage loginPage;
+
     private final String dataPath = "src/test/resources/testData.json";
 
     @Test(priority = 1)
@@ -21,6 +22,12 @@ public class LoginTest extends BaseTests {
         String password = valid.get("password").getAsString();
         loginPage = new LoginPage(driver);
         loginPage.login(username, password);
+
+
+
+
+
+
 
     }
 
